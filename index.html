@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammad Afjal Kadival | Mechanical Design Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #131b2e;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #22304d;
+      --tag-bg: rgba(56, 189, 248, 0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; padding: 20px 15px 60px; }
+    .container { max-width: 960px; margin: 0 auto; }
+    
+    header { text-align: center; padding: 30px 10px 20px; }
+    h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: 0.5px; }
+    .title { color: var(--accent); font-size: 1.15rem; font-weight: 600; margin-top: 6px; }
+    .location { color: var(--muted); font-size: 0.95rem; margin-top: 6px; }
+    
+    .btn-group { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 25px 0 35px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: 0.2s; }
+    .btn-primary { background: var(--accent); color: #090d16; }
+    .btn-whatsapp { background: #22c55e; color: #fff; }
+    .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .btn:hover { transform: translateY(-2px); opacity: 0.92; }
+
+    section { margin-top: 35px; }
+    h2 { font-size: 1.35rem; border-left: 4px solid var(--accent); padding-left: 12px; margin-bottom: 20px; color: #fff; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 22px; margin-bottom: 22px; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 15px; }
+    .skill-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+    .skill-box h3 { font-size: 1rem; color: var(--accent); margin-bottom: 10px; }
+    .tag { display: inline-block; background: var(--tag-bg); color: var(--accent); padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; margin: 3px; }
+
+    .specs-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem; }
+    .specs-table th, .specs-table td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; }
+    .specs-table th { background: rgba(56, 189, 248, 0.08); color: var(--accent); }
+    
+    .drawing-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; margin-top: 16px; }
+    .drawing-item { background: #0f1627; border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 0.88rem; }
+    .drawing-item strong { color: #fff; display: block; margin-bottom: 3px; }
+    .drawing-item span { color: var(--muted); font-size: 0.8rem; }
+
+    .action-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .drive-btn { display: inline-flex; align-items: center; gap: 10px; background: #e11d48; color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 8px; font-weight: 700; transition: 0.2s; }
+    .drive-btn:hover { background: #be123c; transform: translateY(-2px); }
+    .doc-btn { display: inline-flex; align-items: center; gap: 10px; background: #2563eb; color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 8px; font-weight: 700; transition: 0.2s; }
+    .doc-btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>MOHAMMAD AFJAL KADIVAL</h1>
+      <p class="title">Mechanical Design Engineer | Structural Design & FEA</p>
+      <p class="location"><i class="fa-solid fa-location-dot"></i> Malad West, Mumbai, Maharashtra – 400064</p>
+      
+      <div class="btn-group">
+        <a href="tel:+917984323655" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call: 7984323655</a>
+        <a href="https://wa.me/917984323655?text=Hello%20Afjal,%20I%20reviewed%20your%20Engineering%20Portfolio" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Me</a>
+        <a href="mailto:mohammadkadival73@gmail.com" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Email</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Mechanical Design Engineer at <strong>Shirish Technosolutions</strong>, specializing in structural CAD modeling, manufacturing drawings, weight optimization, and finite element analysis (FEA). Experienced in delivering complete 3D & 2D drawing packages (from GAD to component-level shop drawings and fastener BOQ) for solar structures, industrial storage racks, and custom machinery.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Flagship Project: Aesthetic Solar Structure V6</h2>
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <h3 style="font-size: 1.25rem; color: #fff;"><i class="fa-solid fa-solar-panel" style="color: #f59e0b;"></i> Complete 69-Sheet Manufacturing Package (for SolarSquare)</h3>
+          <span style="background: #0284c7; color: #fff; font-size: 0.75rem; padding: 4px 10px; border-radius: 6px; font-weight: bold;">Full Production Drawing Package</span>
+        </div>
+        <p style="margin-top: 10px; color: var(--muted);">Consultant: <strong>Shirish Technosolutions</strong> | Complete production package modeled in SolidWorks & detailed in AutoCAD per BS 8888 standards.</p>
+
+        <table class="specs-table">
+          <tr>
+            <th>Parameter</th>
+            <th>Design Specification</th>
+          </tr>
+          <tr>
+            <td><strong>Overall Canopy Dimensions</strong></td>
+            <td>5855 mm (Length) × 5217 mm (Width) × 2609 mm / 2448 mm (Heights)</td>
+          </tr>
+          <tr>
+            <td><strong>Drafting Standard & Views</strong></td>
+            <td>BS 8888, Third Angle Projection, 69 Detail Sheets + 1 GAD</td>
+          </tr>
+          <tr>
+            <td><strong>Manufacturing Tolerances</strong></td>
+            <td>Linear: ±0.2 mm | Angular: ±0°15' | Inner Bend: 1.0 mm | Fillet: 2.0 mm</td>
+          </tr>
+          <tr>
+            <td><strong>Material Specification</strong></td>
+            <td>Plain Carbon Steel (1.0 mm to 6.0 mm thickness profiles)</td>
+          </tr>
+          <tr>
+            <td><strong>Drainage Architecture</strong></td>
+            <td>Built-in water collection channels, downspout drains & pipe connectors</td>
+          </tr>
+        </table>
+
+        <h4 style="margin-top: 22px; color: var(--accent); font-size: 1.05rem;"><i class="fa-solid fa-layer-group"></i> Sub-Assembly Breakdown in Package:</h4>
+        <div class="drawing-list">
+          <div class="drawing-item">
+            <strong>Rafter Assemblies (1_1, 1_2, 2_1, 2_2)</strong>
+            <span>Main rafter channels (2691 mm), M8 weld nuts, 11x40 mm slots, 38.1x38.1 internal stiffeners.</span>
+          </div>
+          <div class="drawing-item">
+            <strong>Purlin Assemblies (1, 2, 3 Left/Right)</strong>
+            <span>C-channels (2608 mm), CNC end gussets, jointers, and square pipe reinforcement.</span>
+          </div>
+          <div class="drawing-item">
+            <strong>Pillar Substructure & Base Plate</strong>
+            <span>300x300x6 mm base plates, 2180 mm pillar columns, vertical cladding & corner gussets.</span>
+          </div>
+          <div class="drawing-item">
+            <strong>Cable Tray & Water Collector Sets</strong>
+            <span>Continuous cable tray channels (1003 to 2352 mm), water collector boxes & downspouts.</span>
+          </div>
+        </div>
+
+        <!-- Direct PDF Drawings Link & Doc Link -->
+        <div class="action-links">
+          <a href="https://drive.google.com/file/d/1EKiTw_4R8RuKo2XUdu1rERi9nypHC3FM/view?usp=drivesdk" target="_blank" class="drive-btn">
+            <i class="fa-solid fa-file-pdf"></i> View 69-Sheet Technical Drawing Set (PDF)
+          </a>
+          <a href="https://docs.google.com/document/d/1Yu32q_ousRsMm083Zq2WiOXU6O8hfrzzd0KwSb7hrMU/edit" target="_blank" class="doc-btn">
+            <i class="fa-solid fa-file-lines"></i> View Detailed Portfolio (Google Doc)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Software & Technical Capabilities</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>3D CAD & Drafting</h3>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Siemens NX</span>
+          <span class="tag">AutoCAD</span>
+          <span class="tag">nanoCAD</span>
+        </div>
+        <div class="skill-box">
+          <h3>Structural Analysis</h3>
+          <span class="tag">STAAD.Pro</span>
+          <span class="tag">IMDAS</span>
+          <span class="tag">Wind Pressure (IS 875)</span>
+          <span class="tag">Section Optimization</span>
+        </div>
+        <div class="skill-box">
+          <h3>FEA Simulation</h3>
+          <span class="tag">ANSYS Workbench</span>
+          <span class="tag">ANSYS Mechanical</span>
+          <span class="tag">SpaceClaim</span>
+          <span class="tag">Stress & Deflection</span>
+        </div>
+        <div class="skill-box">
+          <h3>Deliverables</h3>
+          <span class="tag">Fabrication Drawings</span>
+          <span class="tag">GAD</span>
+          <span class="tag">Bill of Materials (BOM)</span>
+          <span class="tag">Fastener BOQ</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Timeline</h2>
+      <div class="card">
+        <h3 style="color:#fff;">Design Engineer — Shirish Technosolutions</h3>
+        <p style="color:var(--accent); font-size:0.95rem; margin-bottom:8px;">Feb 2025 – Present | Mumbai, Maharashtra</p>
+        <p style="color:var(--muted); font-size:0.95rem;">Responsible for complete mechanical design cycles, structural optimization on IMDAS/STAAD.Pro, FEA simulations on ANSYS, and shop-floor fabrication drafting.</p>
+      </div>
+      <div class="card">
+        <h3 style="color:#fff;">Diploma in Mechanical Engineering</h3>
+        <p style="color:var(--accent); font-size:0.95rem; margin-bottom:8px;">Gokul Global University | 2nd Year (3rd Semester)</p>
+        <p style="color:var(--muted); font-size:0.95rem;">Certified in Siemens NX CAD & Modeling.</p>
+      </div>
+    </section>
+  </div>
+
+</body>
+  </html>
+  
